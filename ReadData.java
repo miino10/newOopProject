@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadData {
-    public List<Integer> readFromFiles(String[] filenames) throws IOException {
+    public List<Integer> readFromFiles(String[] strings) throws IOException {
         List<Integer> allData = new ArrayList<>();
 
-        for (String filename : filenames) {
+        for (String filename : strings) {
             try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
                 String line;
 

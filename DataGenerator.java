@@ -7,7 +7,7 @@ public class DataGenerator {
         int range = max - min, custNo = 0, product = 0, dailysales = 0;
         PrintWriter fileGen = new PrintWriter(filenames);
         for (int i = 0; i < 730; i++) {
-            System.out.println("daysimulated:" + i);
+            
             dailysales = 0;
             custNo = (int) (Math.random() * range) + min;
 
@@ -32,7 +32,7 @@ public class DataGenerator {
         int range = max - min, custNo = 0, product = 0, dailysalesGroundTruth = 0;
         PrintWriter fileGen = new PrintWriter(filenames);
         for (int i = 0; i < 365; i++) {
-            System.out.println("daytruth:" + i);
+            // System.out.println("daytruth:" + i);
             dailysalesGroundTruth = 0;
             custNo = (int) (Math.random() * range) + min;
 
